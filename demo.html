@@ -1,0 +1,1711 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<!-- swioer.css -->
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<!-- 预处理/统一样式表 -->
+	<link rel="stylesheet" href="./css/style_universal.css">
+	<!-- 预处理/统一样式表 -->
+	<link rel="stylesheet" href="./css/style.css">
+	<script>
+		window.onload = function (){
+			searchBox();
+			jdLimit();
+		}	
+	</script>
+</head>
+<body>
+	<div class="contain_box">	
+		<!-- 头部 -->
+		<div class="header">
+			<!-- 搜索框 -->
+			<div class="search_box">
+				<div class="search_inner">
+					<form action="javascript:;" id="form_search_box">
+						<span class="sc_jd_logo"></span>
+						<span class="sc_logo"></span>
+						<input type="search" name="search" id="search" placeholder="美孚1号">
+					</form>
+					<input type="submit" form="form_search_box" id="search_btn" value="登录">
+				</div>
+			</div>
+			<!-- 轮播图 -->
+			<div class="swiper-container big_jd_ad">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<a href="javascript:;"><img src="./img/bigAd_0.jpg" alt=""></a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="javascript:;"><img src="./img/bigAd_1.jpg" alt=""></a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="javascript:;"><img src="./img/bigAd_2.jpg" alt=""></a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="javascript:;"><img src="./img/bigAd_3.jpg" alt=""></a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="javascript:;"><img src="./img/bigAd_4.jpg" alt=""></a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="javascript:;"><img src="./img/bigAd_5.jpg" alt=""></a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="javascript:;"><img src="./img/bigAd_6.jpg" alt=""></a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="javascript:;"><img src="./img/bigAd_7.jpg" alt=""></a>
+			        </div>
+			    </div>
+			    <!-- 分页器 -->
+			    <div class="swiper-pagination big_jd_ad_tags"></div>
+			</div>
+			<!-- 导航栏 -->
+			<ul class="nav_box">
+				<li><a href="javascript:;"><img src="./img/nav_logo0.png" alt=""><br><span>京东超市</span></a></li>
+				<li><a href="javascript:;"><img src="./img/nav_logo1.png" alt=""><br><span>全球购</span></a></li>
+				<li><a href="javascript:;"><img src="./img/nav_logo2.png" alt=""><br><span>服装城</span></a></li>
+				<li><a href="javascript:;"><img src="./img/nav_logo3.png" alt=""><br><span>京东生鲜</span></a></li>
+				<li><a href="javascript:;"><img src="./img/nav_logo4.png" alt=""><br><span>京东到家</span></a></li>
+				<li><a href="javascript:;"><img src="./img/nav_logo5.png" alt=""><br><span>充值缴费</span></a></li>
+				<li><a href="javascript:;"><img src="./img/nav_logo6.png" alt=""><br><span>领京豆</span></a></li>
+				<li><a href="javascript:;"><img src="./img/nav_logo7.png" alt=""><br><span>领券</span></a></li>
+				<li><a href="javascript:;"><img src="./img/nav_logo8.png" alt=""><br><span>惠赚钱</span></a></li>
+				<li><a href="javascript:;"><img src="./img/nav_logo9.png" alt=""><br><span>物流查询</span></a></li>
+			</ul>
+			<div style="clear: both;"></div>
+			<!-- 大横幅 -->
+			<div class="banner_box">
+				<img src="./img/banner.jpg" alt="">
+			</div>
+		</div>
+		<!-- 京东新闻 -->
+		<div class="jd_news">
+			<div class="jd_news_box">
+				<!-- 新闻标题 -->
+				<span class="jd_news_title"></span>
+				<!-- 新闻播放器 -->
+				<div class="jd_news_player">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				        	<a href="javascript:;">让皮肤一夜滋润，空调房就要除菌加湿器
+							</a>
+				        </div>
+				        <div class="swiper-slide">
+				        	<a href="javascript:;"><span class="news_hot">荐</span>一分钟告诉你为什么男人痴迷黑丝
+							</a>
+				        </div>
+				        <div class="swiper-slide">
+				        	<a href="javascript:;">你能想到的细菌，这个家电竟然都带
+							</a>
+				        </div>
+				        <div class="swiper-slide">
+				        	<a href="javascript:;"><span class="news_hot">HOT</span>选择属于你的时尚T恤 玩美一夏不吃土
+							</a>
+				        </div>
+				    </div>
+				</div>
+				<!-- 更多新闻 -->
+				<span class="jd_news_more">更多</span>
+			</div>
+		</div>
+		<!-- 京东限时 -->
+		<div class="jd_limit_title">
+			<a href="javascript:;" class="jd_limit_title_logo">
+				<!-- 标题 -->
+				<img src="./img/jd_limmit.png" alt="">
+				<strong>16点场</strong>
+				<!-- 计时器 -->
+				<ul class="jd_limit_timer" id="jd_limit_timer">
+					<li id="deadline_hours">00</li>
+					<span>:</span>
+					<li id="deadline_minutes">00</li>
+					<span>:</span>
+					<li id="deadline_seconds">00</li>
+				</ul>
+				<!-- 更多 -->
+				<a href="javascript:;" class="jd_limit_more">
+					<p>秒点好货过周末</p>
+					<span>></span>
+				</a>
+			</a>
+		</div>
+		<div style="clear: both;"></div>
+		<!-- 京东限时盒子 -->
+		<div class="jd_limit_box">
+			<div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner_img">
+		        			<img src="./img/jd_limmit_p0.jpg" alt="">
+		        		</div>
+		        		<div class="jd_limit_box_inner_price">
+		        			<strong><span>¥</span>409</strong>
+		        			<del>¥ 409</del>
+		        		</div>
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner_img">
+		        			<img src="./img/jd_limmit_p1.jpg" alt="">
+		        		</div>
+		        		<div class="jd_limit_box_inner_price">
+		        			<strong><span>¥</span>409</strong>
+		        			<del>¥ 409</del>
+		        		</div>
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner_img">
+		        			<img src="./img/jd_limmit_p2.jpg" alt="">
+		        		</div>
+		        		<div class="jd_limit_box_inner_price">
+		        			<strong><span>¥</span>409</strong>
+		        			<del>¥ 409</del>
+		        		</div>
+		        	</div>
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner_img">
+		        			<img src="./img/jd_limmit_p3.jpg" alt="">
+		        		</div>
+		        		<div class="jd_limit_box_inner_price">
+		        			<strong><span>¥</span>409</strong>
+		        			<del>¥ 409</del>
+		        		</div>
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner_img">
+		        			<img src="./img/jd_limmit_p4.jpg" alt="">
+		        		</div>
+		        		<div class="jd_limit_box_inner_price">
+		        			<strong><span>¥</span>409</strong>
+		        			<del>¥ 409</del>
+		        		</div>
+		        	</div>
+		        </div>
+		         <div class="swiper-slide">
+		        	<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner_img">
+		        			<img src="./img/jd_limmit_p5.jpg" alt="">
+		        		</div>
+		        		<div class="jd_limit_box_inner_price">
+		        			<strong><span>¥</span>409</strong>
+		        			<del>¥ 409</del>
+		        		</div>
+		        	</div>
+		        </div>
+		         <div class="swiper-slide">
+		        	<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner_img">
+		        			<img src="./img/jd_limmit_p6.jpg" alt="">
+		        		</div>
+		        		<div class="jd_limit_box_inner_price">
+		        			<strong><span>¥</span>409</strong>
+		        			<del>¥ 409</del>
+		        		</div>
+		        	</div>
+		        </div>
+		         <div class="swiper-slide">
+		        	<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner_img">
+		        			<img src="./img/jd_limmit_p7.jpg" alt="">
+		        		</div>
+		        		<div class="jd_limit_box_inner_price">
+		        			<strong><span>¥</span>409</strong>
+		        			<del>¥ 409</del>
+		        		</div>
+		        	</div>
+		        </div>
+		         <div class="swiper-slide">
+		        	<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner_img">
+		        			<img src="./img/jd_limmit_p8.jpg" alt="">
+		        		</div>
+		        		<div class="jd_limit_box_inner_price">
+		        			<strong><span>¥</span>409</strong>
+		        			<del>¥ 409</del>
+		        		</div>
+		        	</div>
+		        </div>
+		         <div class="swiper-slide">
+		        	<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner_img">
+		        			<img src="./img/jd_limmit_p9.jpg" alt="">
+		        		</div>
+		        		<div class="jd_limit_box_inner_price">
+		        			<strong><span>¥</span>409</strong>
+		        			<del>¥ 409</del>
+		        		</div>
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner_img">
+		        			<img src="./img/jd_limmit_p10.jpg" alt="">
+		        		</div>
+		        		<div class="jd_limit_box_inner_price">
+		        			<strong><span>¥</span>409</strong>
+		        			<del>¥ 409</del>
+		        		</div>
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="jd_limit_box_inner">
+		        		<div class="jd_limit_box_inner_img">
+		        			<img src="./img/jd_limmit_p11.jpg" alt="">
+		        		</div>
+		        		<div class="jd_limit_box_inner_price">
+		        			<strong><span>¥</span>409</strong>
+		        			<del>¥ 409</del>
+		        		</div>
+		        	</div>
+		        </div>
+		    </div>
+		</div>
+		<div class="space"></div>
+		<!-- 发现好货 排行 闪购 -->
+		<div class="goodwoods_rank_fast">
+			<!-- 发现好货 -->
+			<a href="javascript:;">
+				<div class="goodwoods">
+					<div class="goodwoods_inner">
+						<div class="goodwoods_inner_title">
+							<strong>发现好货</strong>
+							<p>发现品质生活</p>
+						</div>
+						<img src="./img/goodwoods.jpg" alt="">
+					</div>
+				</div>
+			</a>
+			<!-- 排行 -->
+			<a href="javascript:;">
+				<div class="rank">
+					<div class="rank_inner">
+						<div class="rank_inner_title">
+							<strong>排行榜</strong>
+							<p>网罗全民挚爱</p>
+						</div>
+						<img src="./img/rank.jpg" alt="">
+					</div>
+				</div>
+			</a>
+			<!-- 闪购 -->
+			<a href="javascript:;">
+				<div class="fast">
+					<div class="fast_inner">
+						<div class="fast_inner_title">
+							<strong>闪购</strong>
+							<p>品牌特卖专区</p>
+						</div>
+						<img src="./img/fast.jpg" alt="">
+					</div>
+				</div>
+			</a>
+		</div>
+		<div style="clear: both;"></div>
+		<!-- 爱生活 -->
+		<div class="floor_banner">
+			<img src="./img/floor-tit.png" alt="">
+			<p>爱/生/活</p>
+		</div>
+		<div class="lovelife_box">
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>玩3C</strong>
+						<p>iPhone超低价</p>
+						<p>更多优惠GO !</p>
+					</div>
+					<img src="./img/realshow1.jpg" alt="" class="real-show_50_img">
+				</div>
+			</div>
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>京东家电</strong>
+						<p>5折限购</p>
+					</div>
+					<img src="./img/realshow2.jpg" alt="" class="real-show_50_img">
+				</div>
+			</div>
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>京东超市</strong>
+						<p>组合装低至5折</p>
+					</div>
+					<img src="./img/realshow3.jpg" alt="" class="real-show_50_img">
+				</div>
+			</div>
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>爱家</strong>
+						<p>家居3件8折</p>
+						<p>爱家放肆开抢</p>
+					</div>
+					<img src="./img/realshow4.jpg" alt="" class="real-show_50_img">
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>爱宝宝</strong>
+					<p>满188减60</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow5.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>爱美丽</strong>
+					<p>大牌免费试用</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow6.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>爱吃</strong>
+					<p>低至9.9包邮</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow7.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>爱穿搭</strong>
+					<p>商场同款5折</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow8.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<!-- 广告栏 -->
+		<div class="banner_ad">
+			<div class="banner_ad_inner">
+				<div class="swiper-container banner_ad_inner_player">
+					<div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				        	<a href="javascript:;"><img src="./img/banner_ad1.jpg" alt=""></a>
+				        </div>
+				        <div class="swiper-slide">
+				        	<a href="javascript:;"><img src="./img/banner_ad2.jpg" alt=""></a>
+				        </div>
+				    </div>
+				    <!-- 分页器 -->
+				    <div class="swiper-pagination banner_ad_tags"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 享品质 -->
+		<div class="floor_banner">
+			<img src="./img/floor-tit.png" alt="">
+			<p>享/品/质</p>
+		</div>
+		<div class="lovelife_box">
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>全球尖货</strong>
+						<p>新奇特</p>
+					</div>
+					<img src="./img/realshow_a1.jpg" alt="" class="real-show_50_img">
+				</div>
+			</div>
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>京东精选</strong>
+						<p>精选优质生活</p>
+						<p>品质推荐</p>
+					</div>
+					<img src="./img/realshow_a2.jpg" alt="" class="real-show_50_img">
+				</div>
+			</div>
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>京东体育</strong>
+						<p>夏装换新</p>
+						<p>运动潮牌</p>
+					</div>
+					<img src="./img/realshow_a3.jpg" alt="" class="real-show_50_img">
+				</div>
+			</div>
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>奢品大牌</strong>
+						<p>奢品满减</p>
+					</div>
+					<img src="./img/realshow_a4.jpg" alt="" class="real-show_50_img">
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>环球时尚</strong>
+					<p>低至399</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_a5.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>珠宝首饰</strong>
+					<p>2件8折</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_a6.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>设计师</strong>
+					<p>潮流设计精选</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_a7.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>买手甄选</strong>
+					<p>清仓一口价</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_a8.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<!-- 广告栏 -->
+		<div class="banner_ad">
+			<div class="banner_ad_inner">
+				<div class="swiper-container banner_ad_inner_player">
+					<div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				        	<a href="javascript:;"><img src="./img/banner_ad3.jpg" alt=""></a>
+				        </div>
+				        <div class="swiper-slide">
+				        	<a href="javascript:;"><img src="./img/banner_ad4.jpg" alt=""></a>
+				        </div>
+				    </div>
+				    <!-- 分页器 -->
+				    <div class="swiper-pagination banner_ad_tags"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 特色购 -->
+		<div class="floor_banner">
+			<img src="./img/floor-tit.png" alt="">
+			<p>特/色/购</p>
+		</div>
+		<div class="lovelife_box">
+		
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>智能生活</strong>
+						<p>塑造完美身材</p>
+						<p>八块腹肌</p>
+					</div>
+					<img src="./img/realshow_b1.jpg" alt="" class="real-show_50_img" style="width: 48%">
+				</div>
+			</div>
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>白条商城</strong>
+						<p>耳机12期免息</p>
+					</div>
+					<img src="./img/realshow_b4.jpg" alt="" class="real-show_50_img" style="width: 48%">
+				</div>
+			</div>
+			<div class="real_show_25" style="border-bottom: 1px solid #e0e0e0">
+				<div class="real_show_25_inner">
+					<strong>京东众筹</strong>
+					<p>音乐摩托</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_b2.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25" style="border-bottom: 1px solid #e0e0e0">
+				<div class="real_show_25_inner">
+					<strong>京东旅行</strong>
+					<p>今日开房特价</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_b3.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25" style="border-bottom: 1px solid #e0e0e0">
+				<div class="real_show_25_inner">
+					<strong>爱车生活</strong>
+					<p>大牌直降</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_b5.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25" style="border-bottom: 1px solid #e0e0e0">
+				<div class="real_show_25_inner">
+					<strong>生活娱乐</strong>
+					<p>1元抢手机</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_b6.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>二手清仓</strong>
+					<p>iPhone6 秒杀</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_b7.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>大药房</strong>
+					<p>疏风清热</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_b8.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>陪伴宝宝</strong>
+					<p>0元试用</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_b9.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>京东拍卖</strong>
+					<p>年中捡漏拍卖</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_b10.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<!-- 广告栏 -->
+		<div class="banner_ad">
+			<div class="banner_ad_inner">
+				<div class="swiper-container banner_ad_inner_player">
+					<div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				        	<a href="javascript:;"><img src="./img/banner_ad5.jpg" alt=""></a>
+				        </div>
+				        <div class="swiper-slide">
+				        	<a href="javascript:;"><img src="./img/banner_ad6.jpg" alt=""></a>
+				        </div>
+				    </div>
+				    <!-- 分页器 -->
+				    <div class="swiper-pagination banner_ad_tags"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 逛商场 -->
+		<div class="floor_banner">
+			<img src="./img/floor-tit.png" alt="">
+			<p>逛/商/场</p>
+		</div>
+		<div class="lovelife_box">
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>时尚馆</strong>
+						<p>班尼路买3免1</p>
+					</div>
+					<img src="./img/realshow_c1.jpg" alt="" class="real-show_50_img">
+				</div>
+			</div>
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>美食城</strong>
+						<p>牛奶99减20</p>
+					</div>
+					<img src="./img/realshow_c3.jpg" alt="" class="real-show_50_img">
+				</div>
+			</div>
+			<div class="real_show_50">
+				<div class="real_show_50_inner">
+					<div class="real_show_50_txt">
+						<strong>美食城</strong>
+						<p>牛奶99减20</p>
+					</div>
+					<img src="./img/realshow_c3.jpg" alt="" class="real-show_50_img">
+				</div>
+			</div>
+			<div class="real_show_50">
+				<div class="real_show_50_inner" >
+					<div class="real_show_50_txt">
+						<strong>手机数码</strong>
+						<p>OnePlus 5</p>
+						<p>白条免息</p>
+					</div>
+					<img src="./img/realshow_c4.jpg" alt="" class="real-show_50_img">
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner" style="border-bottom: 1px solid #e0e0e0">
+					<strong>母婴馆</strong>
+					<p>满188减60</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_c5.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner" style="border-bottom: 1px solid #e0e0e0">
+					<strong>电脑办公</strong>
+					<p>i7本1999抢</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_c6.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner" style="border-bottom: 1px solid #e0e0e0">
+					<strong>鞋靴箱包</strong>
+					<p>低至5折</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_c7.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner" style="border-bottom: 1px solid #e0e0e0">
+					<strong>京东生鲜</strong>
+					<p>满129减10</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_c9.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>京东生鲜</strong>
+					<p>满129减10</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_c9.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>京东生鲜</strong>
+					<p>满129减10</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_c9.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>图书音像</strong>
+					<p>商场同款5折</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_c11.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+			<div class="real_show_25">
+				<div class="real_show_25_inner">
+					<strong>中国特产</strong>
+					<p>9.9元2斤包邮</p>
+					<div class="real-show_25_img_box">
+						<img src="./img/realshow_c12.jpg" alt="" class="real-show_25_img">
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<!-- 广告栏静态 -->
+		<div class="banner_ad2">
+			<a href="javascript:;"><img src="./img/banner2_ad.jpg" alt=""></a>
+		</div>
+		<!-- 发现好店 -->
+		<div class="floor_banner">
+			<img src="./img/floor-tit.png" alt="">
+			<p>发/现/好/店</p>
+			<span class="floor_banner_more">更多精彩<span>></span></span>
+		</div>
+		<div class="realshow_box">
+			<div class="realshow_box1">
+				<a href="javascript:;">
+					<div class="realshow_box1_inner" style="border-right: 1px solid #e0e0e0">
+						<strong>大家电</strong>
+						<p>优质服务</p>
+						<div class="realshow_box1_inner_img">
+							<img src="./img/realshow_b5.jpg" alt="">
+							<img src="./img/realshow_c6.jpg" alt="">
+						</div>
+						<div class="realshow_box1_inner_ad">
+							<p>奥克斯空调自营旗舰店</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="realshow_box1">
+				<a href="javascript:;">
+					<div class="realshow_box1_inner">
+						<strong>手机通讯</strong>
+						<p>是不是在挑手机？</p>
+						<div class="realshow_box1_inner_img">
+							<img src="./img/realshow_b6.jpg" alt="">
+							<img src="./img/realshow_b7.jpg" alt="">
+						</div>
+						<div class="realshow_box1_inner_ad">
+							<p>京东Apple产品专营店</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<!-- 优选清单 -->
+		<div class="floor_banner">
+			<img src="./img/floor-tit.png" alt="">
+			<p>优/选/清/单</p>
+			<span class="floor_banner_more">更多精彩<span>></span></span>
+		</div>
+		<div class="realshow_box">
+			<div class="realshow_box1">
+				<a href="javascript:;">
+					<div class="realshow_box1_inner" style="border-right: 1px solid #e0e0e0">
+						<strong>千元智能国产手机，送家长很合适</strong>
+						<div class="realshow_box1_inner_img">
+							<img src="./img/5825a5a6Nde8ecb75.jpg" alt="">
+							<img src="./img/584667e9Ncf0d6da5.jpg" alt="">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="realshow_box1">
+				<a href="javascript:;">
+					<div class="realshow_box1_inner">
+						<strong>职场熟女风范，这些连衣裙显瘦更显品位</strong>
+						<div class="realshow_box1_inner_img">
+							<img src="./img/58bfc05aNedaed3f9.jpg" alt="">
+							<img src="./img/58d63e05N97e509e1.jpg" alt="">
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<!-- 直播 -->
+		<div class="floor_banner">
+			<img src="./img/floor-tit.png" alt="">
+			<p>直/播</p>
+			<span class="floor_banner_more">更多精彩<span>></span></span>
+		</div>
+		<div class="realshow_box">
+			<div class="realshow_box1">
+				<a href="javascript:;">
+					<div class="realshow_box1_inner" style="border-right: 1px solid #e0e0e0">
+						<strong>穿搭<span class="live_tag"><img src="./img/live-icon.png" alt=""></span></strong>
+						<p>夏季穿搭第一条越简单越美丽</p>
+						<div class="realshow_box1_inner_img">
+							<img src="./img/58bfc05aNedaed3f9.jpg" alt="" style="width: 100%">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="realshow_box1">
+				<a href="javascript:;">
+					<div class="realshow_box1_inner">
+						<strong>彩妆<span class="live_tag"><img src="./img/live-icon.png" alt=""></span></strong>
+						<p>黛诗涵品牌秒杀专场</p>
+						<div class="realshow_box1_inner_img">
+							<img src="./img/58d63e05N97e509e1.jpg" alt="" style="width: 100%">
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<!-- show more -->
+		<div class="showmore">
+			<a href="javascript:;"><span><img src="./img/showmore.png" alt="">为你推荐</span></a>
+		</div>
+		<!-- more -->
+		<ul class="show_more">
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more1.jpg" alt="">
+							<p>【京东超市】完美芦荟胶<br>40g 3支装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>149<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more2.jpg" alt="">
+							<p>【京东超市】亨氏牛肉胡萝卜泥<br>1kg装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>172<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more3.jpg" alt="">
+							<p>【京东超市】千团精工 油<br>纸牛油纸硅油纸 烤盘纸 烹调纸百度烤纸 40张装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>15<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more4.jpg" alt="">
+							<p>【京东超市】3M扫把思<br>高易扫净扫把套装扫把簸箕组合</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>47<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more5.jpg" alt="">
+							<p>【京东超市】力士(LUX)<br>沐浴露(幽莲魅肤1L+晶透焕采350ml)</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>37<small>.90</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more6.jpg" alt="">
+							<p>【京东超市】草木良品 纯<br>棉压边化妆棉222片两包装（卸妆棉 天然棉 不掉絮）</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>17<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more7.jpg" alt="">
+							<p>咪曦 筷子 家用实木筷子<br>无漆蜡鸡翅木筷子套装 筷勺红木礼品 餐具筷子盒装 鸡翅木10双 25cm</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>29<small>.90</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more8.jpg" alt="">
+							<p>【京东超市】好奇 Huggies<br>铂金装 纸尿裤 S96片  小号尿不湿 【4-8kg】</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>99<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more1.jpg" alt="">
+							<p>【京东超市】完美芦荟胶<br>40g 3支装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>149<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more2.jpg" alt="">
+							<p>【京东超市】亨氏牛肉胡萝卜泥<br>1kg装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>172<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more3.jpg" alt="">
+							<p>【京东超市】千团精工 油<br>纸牛油纸硅油纸 烤盘纸 烹调纸百度烤纸 40张装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>15<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more4.jpg" alt="">
+							<p>【京东超市】3M扫把思<br>高易扫净扫把套装扫把簸箕组合</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>47<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more5.jpg" alt="">
+							<p>【京东超市】力士(LUX)<br>沐浴露(幽莲魅肤1L+晶透焕采350ml)</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>37<small>.90</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more6.jpg" alt="">
+							<p>【京东超市】草木良品 纯<br>棉压边化妆棉222片两包装（卸妆棉 天然棉 不掉絮）</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>17<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more7.jpg" alt="">
+							<p>咪曦 筷子 家用实木筷子<br>无漆蜡鸡翅木筷子套装 筷勺红木礼品 餐具筷子盒装 鸡翅木10双 25cm</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>29<small>.90</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more8.jpg" alt="">
+							<p>【京东超市】好奇 Huggies<br>铂金装 纸尿裤 S96片  小号尿不湿 【4-8kg】</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>99<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more1.jpg" alt="">
+							<p>【京东超市】完美芦荟胶<br>40g 3支装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>149<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more2.jpg" alt="">
+							<p>【京东超市】亨氏牛肉胡萝卜泥<br>1kg装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>172<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more3.jpg" alt="">
+							<p>【京东超市】千团精工 油<br>纸牛油纸硅油纸 烤盘纸 烹调纸百度烤纸 40张装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>15<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more4.jpg" alt="">
+							<p>【京东超市】3M扫把思<br>高易扫净扫把套装扫把簸箕组合</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>47<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more5.jpg" alt="">
+							<p>【京东超市】力士(LUX)<br>沐浴露(幽莲魅肤1L+晶透焕采350ml)</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>37<small>.90</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more6.jpg" alt="">
+							<p>【京东超市】草木良品 纯<br>棉压边化妆棉222片两包装（卸妆棉 天然棉 不掉絮）</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>17<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more7.jpg" alt="">
+							<p>咪曦 筷子 家用实木筷子<br>无漆蜡鸡翅木筷子套装 筷勺红木礼品 餐具筷子盒装 鸡翅木10双 25cm</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>29<small>.90</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more8.jpg" alt="">
+							<p>【京东超市】好奇 Huggies<br>铂金装 纸尿裤 S96片  小号尿不湿 【4-8kg】</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>99<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more1.jpg" alt="">
+							<p>【京东超市】完美芦荟胶<br>40g 3支装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>149<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more2.jpg" alt="">
+							<p>【京东超市】亨氏牛肉胡萝卜泥<br>1kg装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>172<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more3.jpg" alt="">
+							<p>【京东超市】千团精工 油<br>纸牛油纸硅油纸 烤盘纸 烹调纸百度烤纸 40张装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>15<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more4.jpg" alt="">
+							<p>【京东超市】3M扫把思<br>高易扫净扫把套装扫把簸箕组合</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>47<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more5.jpg" alt="">
+							<p>【京东超市】力士(LUX)<br>沐浴露(幽莲魅肤1L+晶透焕采350ml)</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>37<small>.90</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more6.jpg" alt="">
+							<p>【京东超市】草木良品 纯<br>棉压边化妆棉222片两包装（卸妆棉 天然棉 不掉絮）</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>17<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more7.jpg" alt="">
+							<p>咪曦 筷子 家用实木筷子<br>无漆蜡鸡翅木筷子套装 筷勺红木礼品 餐具筷子盒装 鸡翅木10双 25cm</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>29<small>.90</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more8.jpg" alt="">
+							<p>【京东超市】好奇 Huggies<br>铂金装 纸尿裤 S96片  小号尿不湿 【4-8kg】</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>99<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more1.jpg" alt="">
+							<p>【京东超市】完美芦荟胶<br>40g 3支装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>149<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more2.jpg" alt="">
+							<p>【京东超市】亨氏牛肉胡萝卜泥<br>1kg装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>172<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more3.jpg" alt="">
+							<p>【京东超市】千团精工 油<br>纸牛油纸硅油纸 烤盘纸 烹调纸百度烤纸 40张装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>15<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more4.jpg" alt="">
+							<p>【京东超市】3M扫把思<br>高易扫净扫把套装扫把簸箕组合</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>47<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more5.jpg" alt="">
+							<p>【京东超市】力士(LUX)<br>沐浴露(幽莲魅肤1L+晶透焕采350ml)</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>37<small>.90</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more6.jpg" alt="">
+							<p>【京东超市】草木良品 纯<br>棉压边化妆棉222片两包装（卸妆棉 天然棉 不掉絮）</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>17<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more7.jpg" alt="">
+							<p>咪曦 筷子 家用实木筷子<br>无漆蜡鸡翅木筷子套装 筷勺红木礼品 餐具筷子盒装 鸡翅木10双 25cm</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>29<small>.90</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more8.jpg" alt="">
+							<p>【京东超市】好奇 Huggies<br>铂金装 纸尿裤 S96片  小号尿不湿 【4-8kg】</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>99<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more1.jpg" alt="">
+							<p>【京东超市】完美芦荟胶<br>40g 3支装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>149<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more2.jpg" alt="">
+							<p>【京东超市】亨氏牛肉胡萝卜泥<br>1kg装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>172<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more3.jpg" alt="">
+							<p>【京东超市】千团精工 油<br>纸牛油纸硅油纸 烤盘纸 烹调纸百度烤纸 40张装</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>15<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more4.jpg" alt="">
+							<p>【京东超市】3M扫把思<br>高易扫净扫把套装扫把簸箕组合</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>47<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more5.jpg" alt="">
+							<p>【京东超市】力士(LUX)<br>沐浴露(幽莲魅肤1L+晶透焕采350ml)</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>37<small>.90</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more6.jpg" alt="">
+							<p>【京东超市】草木良品 纯<br>棉压边化妆棉222片两包装（卸妆棉 天然棉 不掉絮）</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>17<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some1">
+						<div class="show_some1_inner">
+							<img src="./img/more7.jpg" alt="">
+							<p>咪曦 筷子 家用实木筷子<br>无漆蜡鸡翅木筷子套装 筷勺红木礼品 餐具筷子盒装 鸡翅木10双 25cm</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>29<small>.90</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="show_some2">
+						<div class="show_some2_inner">
+							<img src="./img/more8.jpg" alt="">
+							<p>【京东超市】好奇 Huggies<br>铂金装 纸尿裤 S96片  小号尿不湿 【4-8kg】</p>
+							<div class="more_price">
+								<div class="more_price_inner">
+									<span class="some_price"><small>¥</small>99<small>.00</small></span>
+									<span class="to_similar">看相似</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<div style="clear: both;"></div>
+		<div class="more_continue">
+			<a href="javascript:;">点击继续加载</a>
+		</div>
+		<!-- 底部 -->
+		<div class="footer">
+			<div class="footer_link">
+				<ul>
+					<li><a href="javascript:;">登录</a></li>
+					<li><a href="javascript:;">注册</a></li>
+					<li><a href="javascript:;">反馈</a></li>
+					<li style="border-right: none;"><a href="javascript:;">回到顶部</a></li>
+				</ul>
+			</div>
+			<div class="footer_platforms">
+				<ul>
+					<li>
+						<a href="javascript:;" class="app">
+							<span></span>
+							<p>客户端</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="mobie">
+							<span></span>
+							<p>触屏版</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="pc">
+							<span></span>
+							<p>电脑版</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_owner">
+				<p>Copyright © 2004-2017 京东JD.com 版权所有</p>
+			</div>
+			<div class="footer_nav_bar">
+				<ul>
+					<li><a href="javascript:;"><img src="./img/a-top.png" alt=""></a></li>
+					<li><a href="javascript:;"><img src="./img/n-catergry.png" alt=""></a></li>
+					<li><a href="javascript:;"><img src="./img/n-find.png" alt=""></a></li>
+					<li><a href="javascript:;"><img src="./img/n-cart.png" alt=""></a></li>
+					<li><a href="javascript:;"><img src="./img/n-me.png" alt=""></a></li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+
+	<!-- jq -->
+	<script src="./js/jquery-1.10.1.min.js"></script>
+	<!-- swiper -->
+	<script src="./js/swiper.min.js"></script>
+	<!-- js -->
+	<script src="./js/script.js"></script>
+
+	<script>
+		 var oBigJdAd = new Swiper('.big_jd_ad' , {
+		 	autoplay: 3000 ,
+		 	loop: true ,
+		 	pagination: '.big_jd_ad_tags'
+		 });
+
+		 var oJdNews = new Swiper('.jd_news_player' , {
+		 	direction: 'vertical' ,
+		 	autoplay: 1500 ,
+		 	loop: true 
+		 });
+
+		  var oJdLimit = new Swiper('.jd_limit_box' , {
+		 	slidesPerView: 3,
+			spaceBetween: 0
+		 });
+
+		  var oBannerAd1 =new Swiper('.banner_ad_inner_player' , {
+		 	autoplay: 5000 ,
+		 	loop: true ,
+		 	pagination: '.banner_ad_tags'
+		 });
+	</script>
+</body>
+</html>
